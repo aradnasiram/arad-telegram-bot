@@ -108,7 +108,7 @@ async def main():
     print("شروع لاگین...")
     
     # اتصال
-    await client.start(phone=PHONE_ID)
+    await client.start(phone=PHONE_NUMBER)
     
     # چک کردن اتصال
     me = await client.get_me()
@@ -132,4 +132,5 @@ if __name__ == '__main__':
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
+
         print("\nربات متوقف شد!")
